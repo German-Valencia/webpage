@@ -1,8 +1,17 @@
-.gpt3__navbar {        
+.gpt3__navbar {          
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 6rem;
+    padding: 1rem 2rem;  
+
+
+    background: rgba(255, 255, 255, 0.25);
+    /* backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.25); */
+    position: fixed;
+    z-index: 2;
 }
 
 .gpt3__navbar-links {
@@ -115,7 +124,7 @@
 
 @media screen and (max-width: 550px) {
     .gpt3__navbar {
-        padding: 2rem;
+        padding: 1rem 2rem 0.5rem;
     }
 
     .gpt3__navbar-sign {
