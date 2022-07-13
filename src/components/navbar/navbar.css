@@ -6,7 +6,7 @@
     padding: 1rem 2rem;  
 
 
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(0, 40, 83, 0.85);
     /* backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.25); */
@@ -107,21 +107,20 @@
 }
 
 @media screen and (max-width: 1050px) {
+    
     .gpt3__navbar-links_container {
-        display: none;
-    }
+        display: none;        
+    }    
 
     .gpt3__navbar-menu {
-        display: flex;
-    }
+        display: flex;        
+    }    
 }
-
 @media screen and (max-width: 700px) {
     .gpt3__navbar {
-        padding: 2rem 4rem;
+        padding: 1rem 4rem;
     }
 }
-
 @media screen and (max-width: 550px) {
     .gpt3__navbar {
         padding: 1rem 2rem 0.5rem;

@@ -3,30 +3,39 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import "./navbar.css";
 
-const Menu = () => (
-  <>
-    <p>
-      <a href="#home">Home</a>
-    </p>
-    <p>
-      <a href="#wgpt3">What is GPT3?</a>
-    </p>
-    <p>
-      <a href="#possibility">Open AI</a>
-    </p>
-    <p>
-      <a href="#features">Case Studies</a>
-    </p>
-    <p>
-      <a href="#blog">Library</a>
-    </p>
-  </>
-);
-
 //BEM -> Block Element Modifier
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const Menu = () => (
+    <>
+      <p>
+        <a href="#home" onClick={() => setToggleMenu(false)}>
+          Home
+        </a>
+      </p>
+      <p>
+        <a href="#wgpt3" onClick={() => setToggleMenu(false)}>
+          What is GPT3?
+        </a>
+      </p>
+      <p>
+        <a href="#features" onClick={() => setToggleMenu(false)}>
+          Case Studies
+        </a>
+      </p>
+      <p>
+        <a href="#possibility" onClick={() => setToggleMenu(false)}>
+          Open AI
+        </a>
+      </p>
+      <p>
+        <a href="#blog" onClick={() => setToggleMenu(false)}>
+          Library
+        </a>
+      </p>
+    </>
+  );
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
